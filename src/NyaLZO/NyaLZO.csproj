@@ -1,7 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
+    <Authors>Alexey Sonkin</Authors>
+    <PackageProjectUrl>https://github.com/teplofizik/nyalzo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/teplofizik/nyalzo</RepositoryUrl>
+    <Description>.NET LZO decompress library</Description>
     <Version>1.0.1</Version>
   </PropertyGroup>
 
