@@ -178,6 +178,10 @@ namespace NyaLZO
 
         public long CurrentOffset => Offset;
 
+        public void Advance(long Count) => Offset += Count;
+
+        public BytePointer Copy() => new BytePointer(Data, Offset, DynamicSize);
+
         public byte this[int Index]
         {
             get { return Data[Offset + Index]; }
