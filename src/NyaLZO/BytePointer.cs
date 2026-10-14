@@ -129,7 +129,7 @@ namespace NyaLZO
                 return false;
         }
 
-        public override int GetHashCode() => HashCode.Combine(Data, Offset);
+        public override int GetHashCode() => (Data?.GetHashCode() ?? 0) ^ Offset.GetHashCode();
 
         public static bool operator !=(BytePointer a, BytePointer b) => Compare(a, b, (oa, ob) => oa != ob);
 
