@@ -6,8 +6,13 @@
     <PackageProjectUrl>https://github.com/teplofizik/nyalzo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/teplofizik/nyalzo</RepositoryUrl>
     <Description>.NET LZO decompress library</Description>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
